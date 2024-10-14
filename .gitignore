@@ -1,4 +1,13 @@
-airflow-data
+# Ignorar apenas os arquivos que não são necessários em airflow-data
+airflow-data/*.db
+airflow-data/*.pid
+airflow-data/logs/
+airflow-data/standalone_admin_password.txt
+airflow-data/webserver_config.py
+
+# Não ignorar a pasta dags
+!airflow-data/dags/
+
 
 # These are some examples of commonly ignored file patterns.
 # You should customize this list as applicable to your project.
@@ -49,4 +58,7 @@ Thumbs.db
 *.flv
 *.mov
 *.wmv
+
+venv/
+
 
